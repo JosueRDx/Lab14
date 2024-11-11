@@ -1,4 +1,4 @@
-package com.josuerdx.lab14.widget
+package com.josuerdx.lab14.widget.receiver
 
 import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.GlanceAppWidgetReceiver
