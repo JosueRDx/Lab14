@@ -18,6 +18,7 @@ import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.padding
 import androidx.glance.text.Text
 import com.josuerdx.lab14.MainActivity
+import com.josuerdx.lab14.WorkActivity
 
 class SimpleWidgetContent : GlanceAppWidget() {
 
@@ -41,10 +42,13 @@ class SimpleWidgetContent : GlanceAppWidget() {
             Text(text = "¿A donde quieres dirigirte?", modifier = GlanceModifier.padding(12.dp))
             Row(horizontalAlignment = Alignment.CenterHorizontally) {
                 Button(
-                    text = "Página Principal",
+                    text = "Home",
                     onClick = actionStartActivity<MainActivity>()
                 )
-
+                Button(
+                    text = "Work",
+                    onClick = actionStartActivity<WorkActivity>()
+                )
             }
         }
     }
